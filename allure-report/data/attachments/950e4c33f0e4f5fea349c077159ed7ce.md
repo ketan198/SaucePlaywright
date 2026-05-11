@@ -1,0 +1,51 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: SaucedemoProductPage.spec.ts >> Saucedemo Product Page Tests >> Verify All links , Buttons and naviagtions
+- Location: tests\SaucedemoProductPage.spec.ts:19:3
+
+# Error details
+
+```
+Error: locator.click: Test ended.
+Call log:
+  - waiting for getByRole('link', { name: 'Twitter' })
+
+```
+
+# Test source
+
+```ts
+  1  | import type {Page ,  Locator} from "@playwright/test";
+  2  | 
+  3  | export class BrowserAction{
+  4  | 
+  5  |     page : Page;
+  6  | 
+  7  |     constructor(page :Page) {
+  8  |         this.page = page;
+  9  |     }
+  10 | 
+  11 |     async openlinksinnewtab( linkName : string) : Promise<Page> {
+  12 |     const [newPage] = await Promise.all([
+  13 |       this.page.context().waitForEvent('page'),
+> 14 |       this.page.getByRole('link', { name: linkName }).click()
+     |                                                       ^ Error: locator.click: Test ended.
+  15 |     ]);
+  16 | 
+  17 |     await newPage.waitForLoadState();
+  18 | 
+  19 |     return newPage;
+  20 |     
+  21 | 
+  22 |   }
+  23 | 
+  24 | 
+  25 | 
+  26 | }
+```

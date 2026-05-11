@@ -1,0 +1,4 @@
+hello world
+capture screenshot
+login as standard user
+capture screenshot

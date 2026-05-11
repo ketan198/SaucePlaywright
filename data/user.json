@@ -1,0 +1,19 @@
+{
+    "username": "standard_user",
+    "password": "secret_sauce"  ,
+    "productpagetitletext": "Products",
+    "websiteTitle": "Swag Labs",
+    "sortdropdownoption" : ["Name (A to Z)","Name (Z to A)","Price (low to high)","Price (high to low)"],
+    "twitterlink" :     "https://x.com/saucelabs",
+    "twitteridentifier" : "social-twitter" , 
+    "sauseidentifiertwitter" : "UserDescription" ,
+    "sausedataTwitter" : "Sauce Labs helps organizations deliver a trusted digital experience with the most comprehensive and trusted continuous testing cloud in the world.",
+    "productname1" : "Sauce Labs Backpack", 
+    "productname2" : "Sauce Labs Bike Light" , 
+    "cart_url" : "https://www.saucedemo.com/cart.html", 
+    "SauceLabbike_decp" : "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.",
+    "fisrt_name" : "Test", 
+    "last_name" : "User",
+    "postal_code" : "12345"
+
+}

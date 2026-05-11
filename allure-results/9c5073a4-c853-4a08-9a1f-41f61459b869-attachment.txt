@@ -1,0 +1,8 @@
+Loaded Suite: [
+  { TestName: 'LoginTest', Mode: 'parallel', Run: 'YES' },
+  {
+    TestName: 'Saucedemo Product Page Tests',
+    Mode: 'parallel',
+    Run: 'YES'
+  }
+]

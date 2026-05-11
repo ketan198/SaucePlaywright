@@ -1,0 +1,17 @@
+[
+  { TestName: 'LoginTest', Mode: 'parallel', Run: 'YES' },
+  {
+    TestName: 'Saucedemo Product Page Tests',
+    Mode: 'parallel',
+    Run: 'YES'
+  }
+]
+Map(2) {
+  'logintest' => { TestName: 'LoginTest', Mode: 'parallel', Run: 'YES' },
+  'saucedemo product page tests' => {
+    TestName: 'Saucedemo Product Page Tests',
+    Mode: 'parallel',
+    Run: 'YES'
+  }
+}
+Login successful for TC03_LoginProblemUser
